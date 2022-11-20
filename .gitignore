@@ -12,3 +12,5 @@
 /platform/win32/nx/x64/Debug
 /platform/uwp/NX-UWP/.vs/NX-UWP
 /platform/uwp/NX-UWP/x64/Debug
+/platform/uwp/NX-UWP/AppPackages/NX-UWP/NX-UWP_1.0.0.0_x64_Test
+/platform/uwp/NX-UWP/x64/Release
