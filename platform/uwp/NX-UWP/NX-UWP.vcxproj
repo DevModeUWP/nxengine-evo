@@ -332,9 +332,81 @@
       <DeploymentContent>true</DeploymentContent>
       <Link>%(Filename)%(Extension)</Link>
     </None>
-    <None Include="data\*.*">
+    <None Include="data\*">
       <DeploymentContent>true</DeploymentContent>
       <Link>data\\%(Filename)%(Extension)</Link>
+    </None>
+	<None Include="data\endpic\*">
+      <DeploymentContent>true</DeploymentContent>
+      <Link>data\\endpic\\%(Filename)%(Extension)</Link>
+    </None>
+	<None Include="data\lang\*">
+      <DeploymentContent>true</DeploymentContent>
+      <Link>data\\lang\\%(Filename)%(Extension)</Link>
+    </None>
+	<None Include="data\lang\*">
+      <DeploymentContent>true</DeploymentContent>
+      <Link>data\\lang\\%(Filename)%(Extension)</Link>
+    </None>
+	<None Include="data\Npc\*">
+      <DeploymentContent>true</DeploymentContent>
+      <Link>data\\NPC\\%(Filename)%(Extension)</Link>
+    </None>
+	<None Include="data\org\*">
+      <DeploymentContent>true</DeploymentContent>
+      <Link>data\\org\\%(Filename)%(Extension)</Link>
+    </None>
+	<None Include="data\pxt\*">
+      <DeploymentContent>true</DeploymentContent>
+      <Link>data\\pxt\\%(Filename)%(Extension)</Link>
+    </None>
+	<None Include="data\Stage\*">
+      <DeploymentContent>true</DeploymentContent>
+      <Link>data\\Stage\\%(Filename)%(Extension)</Link>
+    </None>
+	<None Include="data\StageMeta\*">
+      <DeploymentContent>true</DeploymentContent>
+      <Link>data\\StageMeta\\%(Filename)%(Extension)</Link>
+    </None>
+	<None Include="data\lang\arabic\*">
+      <DeploymentContent>true</DeploymentContent>
+      <Link>data\\lang\\arabic\\%(Filename)%(Extension)</Link>
+    </None>
+	<None Include="data\lang\chinese\*">
+      <DeploymentContent>true</DeploymentContent>
+      <Link>data\\lang\\chinese\\%(Filename)%(Extension)</Link>
+    </None>
+	<None Include="data\lang\french\*">
+      <DeploymentContent>true</DeploymentContent>
+      <Link>data\\lang\\french\\%(Filename)%(Extension)</Link>
+    </None>
+	<None Include="data\lang\german\*">
+      <DeploymentContent>true</DeploymentContent>
+      <Link>data\\lang\\german\\%(Filename)%(Extension)</Link>
+    </None>
+	<None Include="data\lang\italian\*">
+      <DeploymentContent>true</DeploymentContent>
+      <Link>data\\lang\\italian\\%(Filename)%(Extension)</Link>
+    </None>
+	<None Include="data\lang\japanese\*">
+      <DeploymentContent>true</DeploymentContent>
+      <Link>data\\lang\\japanese\\%(Filename)%(Extension)</Link>
+    </None>
+	<None Include="data\lang\korean\*">
+      <DeploymentContent>true</DeploymentContent>
+      <Link>data\\lang\\korean\\%(Filename)%(Extension)</Link>
+    </None>
+	<None Include="data\lang\polish\*">
+      <DeploymentContent>true</DeploymentContent>
+      <Link>data\\lang\\polish\\%(Filename)%(Extension)</Link>
+    </None>
+	<None Include="data\lang\russian\*">
+      <DeploymentContent>true</DeploymentContent>
+      <Link>data\\lang\\russian\\%(Filename)%(Extension)</Link>
+    </None>
+	<None Include="data\lang\spanish\*">
+      <DeploymentContent>true</DeploymentContent>
+      <Link>data\\lang\\spanish\\%(Filename)%(Extension)</Link>
     </None>
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
