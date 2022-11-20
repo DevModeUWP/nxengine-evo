@@ -308,6 +308,7 @@ int main(int argc, char *argv[])
     LOG_CRITICAL("ack, sdl_init failed: {}.", SDL_GetError());
     return 1;
   }
+  SDL_SetHint(SDL_HINT_WINRT_HANDLE_BACK_BUTTON, "1");
 
   int flags = IMG_INIT_PNG;
   int initted = IMG_Init(flags);
