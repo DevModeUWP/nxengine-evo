@@ -49,6 +49,21 @@ bool input_init(void)
 
   mappings[ESCKEY].key = SDLK_ESCAPE;
 
+#if defined(WINAPI_FAMILY) && (WINAPI_FAMILY == WINAPI_FAMILY_APP)
+  mappings[MAPSYSTEMKEY].jbut = 3; // y
+  mappings[FIREKEY].jbut      = 1; // b
+  mappings[JUMPKEY].jbut      = 0; // a
+  mappings[INVENTORYKEY].jbut = 2; // x
+  mappings[PREVWPNKEY].jbut   = 4; // Lb
+  mappings[NEXTWPNKEY].jbut   = 5; // Rb
+  mappings[DOWNKEY].jbut      = 12;
+  mappings[LEFTKEY].jbut      = 13;
+  mappings[UPKEY].jbut        = 10;
+  mappings[RIGHTKEY].jbut     = 11;
+  mappings[ENTERKEY].jbut     = 6; // +
+  mappings[ESCKEY].jbut       = 7; // -
+#endif
+
 #if defined(__VITA__)
   mappings[MAPSYSTEMKEY].jbut = 0; // Triangle
   mappings[FIREKEY].jbut      = 1; // Circle

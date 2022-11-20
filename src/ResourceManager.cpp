@@ -74,6 +74,10 @@ std::string ResourceManager::getUserPrefPath()
 {
 #if defined(__SWITCH__)
   return std::string("/switch/nxengine/");
+#elif defined(WINAPI_FAMILY) && (WINAPI_FAMILY == WINAPI_FAMILY_APP)
+  Platform::String ^ local_folder = Windows::Storage::ApplicationData::Current->LocalFolder->Path + L"\\";
+  std::wstring ws(local_folder->Data());
+  return std::string(ws.begin(), ws.end());
 #else
   char *path = SDL_GetPrefPath(NULL, "nxengine");
   if (NULL != path)

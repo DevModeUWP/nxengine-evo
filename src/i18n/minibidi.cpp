@@ -1184,7 +1184,11 @@ int doBidi(bidi_char *line, int count, bool applyShape, bool unused2)
     unsigned char tempType;
     int i, j;
     bool yes, bover;
-    bidi_char* shapeTo;
+#if defined(WINAPI_FAMILY) && (WINAPI_FAMILY == WINAPI_FAMILY_APP)
+    bidi_char* shapeTo = nullptr;
+#else
+    bidi_char* shapeTo
+#endif
 
     /* Check the presence of R or AL types as optimization */
     yes = false;

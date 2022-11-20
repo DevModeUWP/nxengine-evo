@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{a83997b8-3971-4c4c-9dc4-9662f7679170}</ProjectGuid>
+    <Keyword>DirectXApp</Keyword>
+    <RootNamespace>NX_UWP</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <AppContainerApplication>true</AppContainerApplication>
+    <ApplicationType>Windows Store</ApplicationType>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.17763.0</WindowsTargetPlatformMinVersion>
+    <ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+    <AppxPackageSigningEnabled>false</AppxPackageSigningEnabled>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VSINSTALLDIR)\Common7\IDE\Extensions\Microsoft\VsGraphics\ImageContentTask.props" />
+    <Import Project="$(VSINSTALLDIR)\Common7\IDE\Extensions\Microsoft\VsGraphics\MeshContentTask.props" />
+    <Import Project="$(VSINSTALLDIR)\Common7\IDE\Extensions\Microsoft\VsGraphics\ShaderGraphContentTask.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Link>
+      <AdditionalDependencies>d2d1.lib;d3d11.lib;dxgi.lib;windowscodecs.lib;dwrite.lib;libpng16.lib;SDL2.lib;SDL2_image.lib;SDL2_mixer.lib;SDL2main.lib;SDL2test.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);$(SolutionDir)..\ext\lib\x64; $(VCInstallDir)\lib\store\arm; $(VCInstallDir)\lib\arm</AdditionalLibraryDirectories>
+      <AdditionalOptions>/nodefaultlib:vccorlibd /nodefaultlib:msvcrtd vccorlibd.lib msvcrtd.lib %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <ClCompile>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(IntermediateOutputPath);$(SolutionDir)..\ext\SDL2\include;$(SolutionDir)..\ext\include;$(SolutionDir)..\..\..\deps;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <Link>
+      <AdditionalDependencies>d2d1.lib;d3d11.lib;dxgi.lib;windowscodecs.lib;dwrite.lib;libpng16.lib;SDL2.lib;SDL2_image.lib;SDL2_mixer.lib;SDL2main.lib;SDL2test.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);$(SolutionDir)..\ext\lib\x64; $(VCInstallDir)\lib\store\arm; $(VCInstallDir)\lib\arm</AdditionalLibraryDirectories>
+      <AdditionalOptions>/nodefaultlib:vccorlib /nodefaultlib:msvcrt vccorlib.lib msvcrt.lib %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <ClCompile>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(IntermediateOutputPath);$(SolutionDir)..\ext\SDL2\include;$(SolutionDir)..\ext\include;$(SolutionDir)..\..\..\deps;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <Link>
+      <AdditionalDependencies>d2d1.lib;d3d11.lib;dxgi.lib;windowscodecs.lib;dwrite.lib;libpng16.lib;SDL2.lib;SDL2_image.lib;SDL2_mixer.lib;SDL2main.lib;SDL2test.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);$(SolutionDir)..\ext\lib\x64; $(VCInstallDir)\lib\store\arm64; $(VCInstallDir)\lib\arm64</AdditionalLibraryDirectories>
+      <AdditionalOptions>/nodefaultlib:vccorlibd /nodefaultlib:msvcrtd vccorlibd.lib msvcrtd.lib %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <ClCompile>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(IntermediateOutputPath);$(SolutionDir)..\ext\SDL2\include;$(SolutionDir)..\ext\include;$(SolutionDir)..\..\..\deps;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <Link>
+      <AdditionalDependencies>d2d1.lib;d3d11.lib;dxgi.lib;windowscodecs.lib;dwrite.lib;libpng16.lib;SDL2.lib;SDL2_image.lib;SDL2_mixer.lib;SDL2main.lib;SDL2test.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);$(SolutionDir)..\ext\lib\x64; $(VCInstallDir)\lib\store\arm64; $(VCInstallDir)\lib\arm64</AdditionalLibraryDirectories>
+      <AdditionalOptions>/nodefaultlib:vccorlib /nodefaultlib:msvcrt vccorlib.lib msvcrt.lib %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <ClCompile>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(IntermediateOutputPath);$(SolutionDir)..\ext\SDL2\include;$(SolutionDir)..\ext\include;$(SolutionDir)..\..\..\deps;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Link>
+      <AdditionalDependencies>d2d1.lib;d3d11.lib;dxgi.lib;windowscodecs.lib;dwrite.lib;libpng16.lib;SDL2.lib;SDL2_image.lib;SDL2_mixer.lib;SDL2main.lib;SDL2test.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);$(SolutionDir)..\ext\lib\x64; $(VCInstallDir)\lib\store; $(VCInstallDir)\lib</AdditionalLibraryDirectories>
+      <AdditionalOptions>/nodefaultlib:vccorlibd /nodefaultlib:msvcrtd vccorlibd.lib msvcrtd.lib %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <ClCompile>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(IntermediateOutputPath);$(SolutionDir)..\ext\SDL2\include;$(SolutionDir)..\ext\include;$(SolutionDir)..\..\..\deps;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Link>
+      <AdditionalDependencies>d2d1.lib;d3d11.lib;dxgi.lib;windowscodecs.lib;dwrite.lib;libpng16.lib;SDL2.lib;SDL2_image.lib;SDL2_mixer.lib;SDL2main.lib;SDL2test.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);$(SolutionDir)..\ext\lib\x64; $(VCInstallDir)\lib\store; $(VCInstallDir)\lib</AdditionalLibraryDirectories>
+      <AdditionalOptions>/nodefaultlib:vccorlib /nodefaultlib:msvcrt vccorlib.lib msvcrt.lib %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <ClCompile>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(IntermediateOutputPath);$(SolutionDir)..\ext\SDL2\include;$(SolutionDir)..\ext\include;$(SolutionDir)..\..\..\deps;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Link>
+      <AdditionalDependencies>d2d1.lib;d3d11.lib;dxgi.lib;windowscodecs.lib;dwrite.lib;libpng16.lib;SDL2.lib;SDL2_image.lib;SDL2_mixer.lib;SDL2main.lib;SDL2test.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);$(SolutionDir)..\ext\lib\x64; $(VCInstallDir)\lib\store\amd64; $(VCInstallDir)\lib\amd64</AdditionalLibraryDirectories>
+      <AdditionalOptions>/nodefaultlib:vccorlibd /nodefaultlib:msvcrtd vccorlibd.lib msvcrtd.lib %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <ClCompile>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(IntermediateOutputPath);$(SolutionDir)..\ext\SDL2\include;$(SolutionDir)..\ext\include;$(SolutionDir)..\..\..\deps;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Link>
+      <AdditionalDependencies>d2d1.lib;d3d11.lib;dxgi.lib;windowscodecs.lib;dwrite.lib;libpng16.lib;SDL2.lib;SDL2_image.lib;SDL2_mixer.lib;SDL2main.lib;SDL2test.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);$(SolutionDir)..\ext\lib\x64; $(VCInstallDir)\lib\store\amd64; $(VCInstallDir)\lib\amd64</AdditionalLibraryDirectories>
+      <AdditionalOptions>/nodefaultlib:vccorlib /nodefaultlib:msvcrt vccorlib.lib msvcrt.lib %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <ClCompile>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(IntermediateOutputPath);$(SolutionDir)..\ext\SDL2\include;$(SolutionDir)..\ext\include;$(SolutionDir)..\..\..\deps;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Image Include="..\..\win32\nx64x64.ico" />
+    <Image Include="Assets\LockScreenLogo.scale-200.png" />
+    <Image Include="Assets\SplashScreen.scale-200.png" />
+    <Image Include="Assets\Square150x150Logo.scale-200.png" />
+    <Image Include="Assets\Square44x44Logo.scale-200.png" />
+    <Image Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Image Include="Assets\StoreLogo.png" />
+    <Image Include="Assets\Wide310x150Logo.scale-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\ai\ai.h" />
+    <ClInclude Include="..\..\..\src\ai\almond\almond.h" />
+    <ClInclude Include="..\..\..\src\ai\balrog_common.h" />
+    <ClInclude Include="..\..\..\src\ai\boss\balfrog.h" />
+    <ClInclude Include="..\..\..\src\ai\boss\ballos.h" />
+    <ClInclude Include="..\..\..\src\ai\boss\core.h" />
+    <ClInclude Include="..\..\..\src\ai\boss\heavypress.h" />
+    <ClInclude Include="..\..\..\src\ai\boss\ironhead.h" />
+    <ClInclude Include="..\..\..\src\ai\boss\omega.h" />
+    <ClInclude Include="..\..\..\src\ai\boss\sisters.h" />
+    <ClInclude Include="..\..\..\src\ai\boss\undead_core.h" />
+    <ClInclude Include="..\..\..\src\ai\boss\x.h" />
+    <ClInclude Include="..\..\..\src\ai\egg\egg.h" />
+    <ClInclude Include="..\..\..\src\ai\egg\egg2.h" />
+    <ClInclude Include="..\..\..\src\ai\egg\igor.h" />
+    <ClInclude Include="..\..\..\src\ai\final_battle\balcony.h" />
+    <ClInclude Include="..\..\..\src\ai\final_battle\doctor.h" />
+    <ClInclude Include="..\..\..\src\ai\final_battle\doctor_common.h" />
+    <ClInclude Include="..\..\..\src\ai\final_battle\doctor_frenzied.h" />
+    <ClInclude Include="..\..\..\src\ai\final_battle\final_misc.h" />
+    <ClInclude Include="..\..\..\src\ai\final_battle\misery.h" />
+    <ClInclude Include="..\..\..\src\ai\final_battle\sidekicks.h" />
+    <ClInclude Include="..\..\..\src\ai\first_cave\first_cave.h" />
+    <ClInclude Include="..\..\..\src\ai\hell\ballos_misc.h" />
+    <ClInclude Include="..\..\..\src\ai\hell\ballos_priest.h" />
+    <ClInclude Include="..\..\..\src\ai\hell\hell.h" />
+    <ClInclude Include="..\..\..\src\ai\IrregularBBox.h" />
+    <ClInclude Include="..\..\..\src\ai\last_cave\last_cave.h" />
+    <ClInclude Include="..\..\..\src\ai\maze\balrog_boss_missiles.h" />
+    <ClInclude Include="..\..\..\src\ai\maze\critter_purple.h" />
+    <ClInclude Include="..\..\..\src\ai\maze\gaudi.h" />
+    <ClInclude Include="..\..\..\src\ai\maze\labyrinth_m.h" />
+    <ClInclude Include="..\..\..\src\ai\maze\maze.h" />
+    <ClInclude Include="..\..\..\src\ai\maze\pooh_black.h" />
+    <ClInclude Include="..\..\..\src\ai\npc\balrog.h" />
+    <ClInclude Include="..\..\..\src\ai\npc\curly.h" />
+    <ClInclude Include="..\..\..\src\ai\npc\curly_ai.h" />
+    <ClInclude Include="..\..\..\src\ai\npc\misery.h" />
+    <ClInclude Include="..\..\..\src\ai\npc\npcguest.h" />
+    <ClInclude Include="..\..\..\src\ai\npc\npcplayer.h" />
+    <ClInclude Include="..\..\..\src\ai\npc\npcregu.h" />
+    <ClInclude Include="..\..\..\src\ai\oside\oside.h" />
+    <ClInclude Include="..\..\..\src\ai\plantation\plantation.h" />
+    <ClInclude Include="..\..\..\src\ai\sand\curly_boss.h" />
+    <ClInclude Include="..\..\..\src\ai\sand\puppy.h" />
+    <ClInclude Include="..\..\..\src\ai\sand\sand.h" />
+    <ClInclude Include="..\..\..\src\ai\sand\toroko_frenzied.h" />
+    <ClInclude Include="..\..\..\src\ai\stdai.h" />
+    <ClInclude Include="..\..\..\src\ai\sym\smoke.h" />
+    <ClInclude Include="..\..\..\src\ai\sym\sym.h" />
+    <ClInclude Include="..\..\..\src\ai\village\balrog_boss_running.h" />
+    <ClInclude Include="..\..\..\src\ai\village\ma_pignon.h" />
+    <ClInclude Include="..\..\..\src\ai\village\village.h" />
+    <ClInclude Include="..\..\..\src\ai\weapons\blade.h" />
+    <ClInclude Include="..\..\..\src\ai\weapons\bubbler.h" />
+    <ClInclude Include="..\..\..\src\ai\weapons\fireball.h" />
+    <ClInclude Include="..\..\..\src\ai\weapons\missile.h" />
+    <ClInclude Include="..\..\..\src\ai\weapons\nemesis.h" />
+    <ClInclude Include="..\..\..\src\ai\weapons\polar_mgun.h" />
+    <ClInclude Include="..\..\..\src\ai\weapons\snake.h" />
+    <ClInclude Include="..\..\..\src\ai\weapons\spur.h" />
+    <ClInclude Include="..\..\..\src\ai\weapons\weapons.h" />
+    <ClInclude Include="..\..\..\src\ai\weapons\whimstar.h" />
+    <ClInclude Include="..\..\..\src\ai\weed\balrog_boss_flying.h" />
+    <ClInclude Include="..\..\..\src\ai\weed\frenzied_mimiga.h" />
+    <ClInclude Include="..\..\..\src\ai\weed\weed.h" />
+    <ClInclude Include="..\..\..\src\autogen\AssignSprites.h" />
+    <ClInclude Include="..\..\..\src\autogen\objnames.h" />
+    <ClInclude Include="..\..\..\src\autogen\sprites.h" />
+    <ClInclude Include="..\..\..\src\caret.h" />
+    <ClInclude Include="..\..\..\src\common\basics.h" />
+    <ClInclude Include="..\..\..\src\common\bufio.h" />
+    <ClInclude Include="..\..\..\src\common\glob.h" />
+    <ClInclude Include="..\..\..\src\common\InitList.h" />
+    <ClInclude Include="..\..\..\src\common\llist.h" />
+    <ClInclude Include="..\..\..\src\common\misc.h" />
+    <ClInclude Include="..\..\..\src\config.h" />
+    <ClInclude Include="..\..\..\src\console.h" />
+    <ClInclude Include="..\..\..\src\debug.h" />
+    <ClInclude Include="..\..\..\src\endgame\credits.h" />
+    <ClInclude Include="..\..\..\src\endgame\CredReader.h" />
+    <ClInclude Include="..\..\..\src\endgame\island.h" />
+    <ClInclude Include="..\..\..\src\endgame\misc.h" />
+    <ClInclude Include="..\..\..\src\floattext.h" />
+    <ClInclude Include="..\..\..\src\game.h" />
+    <ClInclude Include="..\..\..\src\graphics\Font.h" />
+    <ClInclude Include="..\..\..\src\graphics\nx_icon.h" />
+    <ClInclude Include="..\..\..\src\graphics\pngfuncs.h" />
+    <ClInclude Include="..\..\..\src\graphics\Renderer.h" />
+    <ClInclude Include="..\..\..\src\graphics\Sprites.h" />
+    <ClInclude Include="..\..\..\src\graphics\Surface.h" />
+    <ClInclude Include="..\..\..\src\graphics\Tileset.h" />
+    <ClInclude Include="..\..\..\src\graphics\types.h" />
+    <ClInclude Include="..\..\..\src\graphics\zoom.h" />
+    <ClInclude Include="..\..\..\src\i18n\minibidi.h" />
+    <ClInclude Include="..\..\..\src\i18n\translate.h" />
+    <ClInclude Include="..\..\..\src\input.h" />
+    <ClInclude Include="..\..\..\src\intro\intro.h" />
+    <ClInclude Include="..\..\..\src\intro\title.h" />
+    <ClInclude Include="..\..\..\src\inventory.h" />
+    <ClInclude Include="..\..\..\src\map.h" />
+    <ClInclude Include="..\..\..\src\maprecord.h" />
+    <ClInclude Include="..\..\..\src\map_system.h" />
+    <ClInclude Include="..\..\..\src\niku.h" />
+    <ClInclude Include="..\..\..\src\nx.h" />
+    <ClInclude Include="..\..\..\src\object.h" />
+    <ClInclude Include="..\..\..\src\ObjManager.h" />
+    <ClInclude Include="..\..\..\src\pause\dialog.h" />
+    <ClInclude Include="..\..\..\src\pause\message.h" />
+    <ClInclude Include="..\..\..\src\pause\mods.h" />
+    <ClInclude Include="..\..\..\src\pause\objects.h" />
+    <ClInclude Include="..\..\..\src\pause\options.h" />
+    <ClInclude Include="..\..\..\src\pause\pause.h" />
+    <ClInclude Include="..\..\..\src\player.h" />
+    <ClInclude Include="..\..\..\src\playerstats.h" />
+    <ClInclude Include="..\..\..\src\profile.h" />
+    <ClInclude Include="..\..\..\src\p_arms.h" />
+    <ClInclude Include="..\..\..\src\ResourceManager.h" />
+    <ClInclude Include="..\..\..\src\screeneffect.h" />
+    <ClInclude Include="..\..\..\src\settings.h" />
+    <ClInclude Include="..\..\..\src\siflib\sectSprites.h" />
+    <ClInclude Include="..\..\..\src\siflib\sectStringArray.h" />
+    <ClInclude Include="..\..\..\src\siflib\sif.h" />
+    <ClInclude Include="..\..\..\src\siflib\sifloader.h" />
+    <ClInclude Include="..\..\..\src\Singleton.h" />
+    <ClInclude Include="..\..\..\src\slope.h" />
+    <ClInclude Include="..\..\..\src\sound\Ogg.h" />
+    <ClInclude Include="..\..\..\src\sound\Organya.h" />
+    <ClInclude Include="..\..\..\src\sound\Pixtone.h" />
+    <ClInclude Include="..\..\..\src\sound\SoundManager.h" />
+    <ClInclude Include="..\..\..\src\stageboss.h" />
+    <ClInclude Include="..\..\..\src\stagedata.h" />
+    <ClInclude Include="..\..\..\src\statusbar.h" />
+    <ClInclude Include="..\..\..\src\TextBox\ItemImage.h" />
+    <ClInclude Include="..\..\..\src\TextBox\SaveSelect.h" />
+    <ClInclude Include="..\..\..\src\TextBox\StageSelect.h" />
+    <ClInclude Include="..\..\..\src\TextBox\TextBox.h" />
+    <ClInclude Include="..\..\..\src\TextBox\YesNoPrompt.h" />
+    <ClInclude Include="..\..\..\src\trig.h" />
+    <ClInclude Include="..\..\..\src\tsc.h" />
+    <ClInclude Include="..\..\..\src\Utils\Logger.h" />
+    <ClInclude Include="..\..\..\src\version.h" />
+    <ClInclude Include="..\..\win32\nx\resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\win32\nx\nx.rc" />
+    <ResourceCompile Include="..\ext\SDL2\src\main\winrt\SDL2-WinRTResources.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\ai\ai.cpp" />
+    <ClCompile Include="..\..\..\src\ai\almond\almond.cpp" />
+    <ClCompile Include="..\..\..\src\ai\balrog_common.cpp" />
+    <ClCompile Include="..\..\..\src\ai\boss\balfrog.cpp" />
+    <ClCompile Include="..\..\..\src\ai\boss\ballos.cpp" />
+    <ClCompile Include="..\..\..\src\ai\boss\core.cpp" />
+    <ClCompile Include="..\..\..\src\ai\boss\heavypress.cpp" />
+    <ClCompile Include="..\..\..\src\ai\boss\ironhead.cpp" />
+    <ClCompile Include="..\..\..\src\ai\boss\omega.cpp" />
+    <ClCompile Include="..\..\..\src\ai\boss\sisters.cpp" />
+    <ClCompile Include="..\..\..\src\ai\boss\undead_core.cpp" />
+    <ClCompile Include="..\..\..\src\ai\boss\x.cpp" />
+    <ClCompile Include="..\..\..\src\ai\egg\egg.cpp" />
+    <ClCompile Include="..\..\..\src\ai\egg\egg2.cpp" />
+    <ClCompile Include="..\..\..\src\ai\egg\igor.cpp" />
+    <ClCompile Include="..\..\..\src\ai\final_battle\balcony.cpp" />
+    <ClCompile Include="..\..\..\src\ai\final_battle\doctor.cpp" />
+    <ClCompile Include="..\..\..\src\ai\final_battle\doctor_common.cpp" />
+    <ClCompile Include="..\..\..\src\ai\final_battle\doctor_frenzied.cpp" />
+    <ClCompile Include="..\..\..\src\ai\final_battle\final_misc.cpp" />
+    <ClCompile Include="..\..\..\src\ai\final_battle\misery.cpp" />
+    <ClCompile Include="..\..\..\src\ai\final_battle\sidekicks.cpp" />
+    <ClCompile Include="..\..\..\src\ai\first_cave\first_cave.cpp" />
+    <ClCompile Include="..\..\..\src\ai\hell\ballos_misc.cpp" />
+    <ClCompile Include="..\..\..\src\ai\hell\ballos_priest.cpp" />
+    <ClCompile Include="..\..\..\src\ai\hell\hell.cpp" />
+    <ClCompile Include="..\..\..\src\ai\IrregularBBox.cpp" />
+    <ClCompile Include="..\..\..\src\ai\last_cave\last_cave.cpp" />
+    <ClCompile Include="..\..\..\src\ai\maze\balrog_boss_missiles.cpp" />
+    <ClCompile Include="..\..\..\src\ai\maze\critter_purple.cpp" />
+    <ClCompile Include="..\..\..\src\ai\maze\gaudi.cpp" />
+    <ClCompile Include="..\..\..\src\ai\maze\labyrinth_m.cpp" />
+    <ClCompile Include="..\..\..\src\ai\maze\maze.cpp" />
+    <ClCompile Include="..\..\..\src\ai\maze\pooh_black.cpp" />
+    <ClCompile Include="..\..\..\src\ai\npc\balrog.cpp" />
+    <ClCompile Include="..\..\..\src\ai\npc\curly.cpp" />
+    <ClCompile Include="..\..\..\src\ai\npc\curly_ai.cpp" />
+    <ClCompile Include="..\..\..\src\ai\npc\misery.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">$(IntDir)/src/ai/npc/misery.cpp.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)/src/ai/npc/misery.cpp.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">$(IntDir)/src/ai/npc/misery.cpp.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)/src/ai/npc/misery.cpp.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)/src/ai/npc/misery.cpp.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">$(IntDir)/src/ai/npc/misery.cpp.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">$(IntDir)/src/ai/npc/misery.cpp.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)/src/ai/npc/misery.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\ai\npc\npcguest.cpp" />
+    <ClCompile Include="..\..\..\src\ai\npc\npcplayer.cpp" />
+    <ClCompile Include="..\..\..\src\ai\npc\npcregu.cpp" />
+    <ClCompile Include="..\..\..\src\ai\oside\oside.cpp" />
+    <ClCompile Include="..\..\..\src\ai\plantation\plantation.cpp" />
+    <ClCompile Include="..\..\..\src\ai\sand\curly_boss.cpp" />
+    <ClCompile Include="..\..\..\src\ai\sand\puppy.cpp" />
+    <ClCompile Include="..\..\..\src\ai\sand\sand.cpp" />
+    <ClCompile Include="..\..\..\src\ai\sand\toroko_frenzied.cpp" />
+    <ClCompile Include="..\..\..\src\ai\sym\smoke.cpp" />
+    <ClCompile Include="..\..\..\src\ai\sym\sym.cpp" />
+    <ClCompile Include="..\..\..\src\ai\village\balrog_boss_running.cpp" />
+    <ClCompile Include="..\..\..\src\ai\village\ma_pignon.cpp" />
+    <ClCompile Include="..\..\..\src\ai\village\village.cpp" />
+    <ClCompile Include="..\..\..\src\ai\weapons\blade.cpp" />
+    <ClCompile Include="..\..\..\src\ai\weapons\bubbler.cpp" />
+    <ClCompile Include="..\..\..\src\ai\weapons\fireball.cpp" />
+    <ClCompile Include="..\..\..\src\ai\weapons\missile.cpp" />
+    <ClCompile Include="..\..\..\src\ai\weapons\nemesis.cpp" />
+    <ClCompile Include="..\..\..\src\ai\weapons\polar_mgun.cpp" />
+    <ClCompile Include="..\..\..\src\ai\weapons\snake.cpp" />
+    <ClCompile Include="..\..\..\src\ai\weapons\spur.cpp" />
+    <ClCompile Include="..\..\..\src\ai\weapons\weapons.cpp" />
+    <ClCompile Include="..\..\..\src\ai\weapons\whimstar.cpp" />
+    <ClCompile Include="..\..\..\src\ai\weed\balrog_boss_flying.cpp" />
+    <ClCompile Include="..\..\..\src\ai\weed\frenzied_mimiga.cpp" />
+    <ClCompile Include="..\..\..\src\ai\weed\weed.cpp" />
+    <ClCompile Include="..\..\..\src\autogen\AssignSprites.cpp" />
+    <ClCompile Include="..\..\..\src\caret.cpp" />
+    <ClCompile Include="..\..\..\src\common\glob.cpp" />
+    <ClCompile Include="..\..\..\src\common\InitList.cpp" />
+    <ClCompile Include="..\..\..\src\common\misc.cpp" />
+    <ClCompile Include="..\..\..\src\console.cpp" />
+    <ClCompile Include="..\..\..\src\debug.cpp" />
+    <ClCompile Include="..\..\..\src\endgame\credits.cpp" />
+    <ClCompile Include="..\..\..\src\endgame\CredReader.cpp" />
+    <ClCompile Include="..\..\..\src\endgame\island.cpp" />
+    <ClCompile Include="..\..\..\src\endgame\misc.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">$(IntDir)/src/endgame/misc.cpp.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)/src/endgame/misc.cpp.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">$(IntDir)/src/endgame/misc.cpp.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)/src/endgame/misc.cpp.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)/src/endgame/misc.cpp.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">$(IntDir)/src/endgame/misc.cpp.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">$(IntDir)/src/endgame/misc.cpp.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)/src/endgame/misc.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\floattext.cpp" />
+    <ClCompile Include="..\..\..\src\game.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\Font.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\pngfuncs.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\Renderer.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\Sprites.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\Surface.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\Tileset.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\zoom.cpp" />
+    <ClCompile Include="..\..\..\src\i18n\minibidi.cpp" />
+    <ClCompile Include="..\..\..\src\i18n\translate.cpp" />
+    <ClCompile Include="..\..\..\src\input.cpp" />
+    <ClCompile Include="..\..\..\src\intro\intro.cpp" />
+    <ClCompile Include="..\..\..\src\intro\title.cpp" />
+    <ClCompile Include="..\..\..\src\inventory.cpp" />
+    <ClCompile Include="..\..\..\src\main.cpp" />
+    <ClCompile Include="..\..\..\src\map.cpp" />
+    <ClCompile Include="..\..\..\src\map_system.cpp" />
+    <ClCompile Include="..\..\..\src\niku.cpp" />
+    <ClCompile Include="..\..\..\src\object.cpp" />
+    <ClCompile Include="..\..\..\src\ObjManager.cpp" />
+    <ClCompile Include="..\..\..\src\pause\dialog.cpp" />
+    <ClCompile Include="..\..\..\src\pause\message.cpp" />
+    <ClCompile Include="..\..\..\src\pause\mods.cpp" />
+    <ClCompile Include="..\..\..\src\pause\objects.cpp" />
+    <ClCompile Include="..\..\..\src\pause\options.cpp" />
+    <ClCompile Include="..\..\..\src\pause\pause.cpp" />
+    <ClCompile Include="..\..\..\src\player.cpp" />
+    <ClCompile Include="..\..\..\src\playerstats.cpp" />
+    <ClCompile Include="..\..\..\src\profile.cpp" />
+    <ClCompile Include="..\..\..\src\p_arms.cpp" />
+    <ClCompile Include="..\..\..\src\ResourceManager.cpp">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">true</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">true</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\screeneffect.cpp" />
+    <ClCompile Include="..\..\..\src\settings.cpp" />
+    <ClCompile Include="..\..\..\src\siflib\sectSprites.cpp" />
+    <ClCompile Include="..\..\..\src\siflib\sectStringArray.cpp" />
+    <ClCompile Include="..\..\..\src\siflib\sif.cpp" />
+    <ClCompile Include="..\..\..\src\siflib\sifloader.cpp" />
+    <ClCompile Include="..\..\..\src\slope.cpp" />
+    <ClCompile Include="..\..\..\src\sound\Ogg.cpp" />
+    <ClCompile Include="..\..\..\src\sound\Organya.cpp" />
+    <ClCompile Include="..\..\..\src\sound\Pixtone.cpp" />
+    <ClCompile Include="..\..\..\src\sound\SoundManager.cpp" />
+    <ClCompile Include="..\..\..\src\stageboss.cpp" />
+    <ClCompile Include="..\..\..\src\stagedata.cpp" />
+    <ClCompile Include="..\..\..\src\statusbar.cpp" />
+    <ClCompile Include="..\..\..\src\TextBox\ItemImage.cpp" />
+    <ClCompile Include="..\..\..\src\TextBox\SaveSelect.cpp" />
+    <ClCompile Include="..\..\..\src\TextBox\StageSelect.cpp" />
+    <ClCompile Include="..\..\..\src\TextBox\TextBox.cpp" />
+    <ClCompile Include="..\..\..\src\TextBox\YesNoPrompt.cpp" />
+    <ClCompile Include="..\..\..\src\trig.cpp" />
+    <ClCompile Include="..\..\..\src\tsc.cpp" />
+    <ClCompile Include="..\..\..\src\Utils\Logger.cpp" />
+    <ClCompile Include="..\ext\SDL2\src\main\winrt\SDL_winrt_main_NonXAML.cpp">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">true</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">true</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</CompileAsWinRT>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\ext\SDL2\src\main\winrt\SDL2-WinRTResource_BlankCursor.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ext\SDL2\VisualC-WinRT\SDL-UWP.vcxproj">
+      <Project>{89e9b32e-a86a-47c3-a948-d2b1622925ce}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VSINSTALLDIR)\Common7\IDE\Extensions\Microsoft\VsGraphics\ImageContentTask.targets" />
+    <Import Project="$(VSINSTALLDIR)\Common7\IDE\Extensions\Microsoft\VsGraphics\MeshContentTask.targets" />
+    <Import Project="$(VSINSTALLDIR)\Common7\IDE\Extensions\Microsoft\VsGraphics\ShaderGraphContentTask.targets" />
+  </ImportGroup>
+</Project>

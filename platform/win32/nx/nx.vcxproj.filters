@@ -222,9 +222,6 @@
     <ClCompile Include="..\..\..\src\common\misc.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\src\common\stat.cpp">
-      <Filter>Sources</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\src\console.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
@@ -252,19 +249,7 @@
     <ClCompile Include="..\..\..\src\graphics\font.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\src\graphics\bmfont.cpp">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\graphics\graphics.cpp">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\graphics\nxsurface.cpp">
-      <Filter>Sources</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\src\graphics\pngfuncs.cpp">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\graphics\screenshot.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\src\graphics\sprites.cpp">
@@ -298,9 +283,6 @@
       <Filter>Sources</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\src\niku.cpp">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\nx_math.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\src\object.cpp">
@@ -357,15 +339,6 @@
     <ClCompile Include="..\..\..\src\slope.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\src\sound\org.cpp">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\sound\pxt.cpp">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\sound\sound.cpp">
-      <Filter>Sources</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\src\stageboss.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
@@ -396,9 +369,6 @@
     <ClCompile Include="..\..\..\src\tsc.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\src\sound\ogg11.cpp">
-      <Filter>Sources</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\src\ResourceManager.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
@@ -412,6 +382,27 @@
       <Filter>Sources</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\src\Utils\Logger.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\Renderer.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\Surface.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\pause\mods.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\sound\Ogg.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\sound\Organya.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\sound\Pixtone.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\sound\SoundManager.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
   </ItemGroup>
@@ -674,22 +665,10 @@
     <ClInclude Include="..\..\..\src\graphics\font.h">
       <Filter>Headers</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\src\graphics\bmfont.h">
-      <Filter>Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\src\graphics\graphics.h">
-      <Filter>Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\src\graphics\nxsurface.h">
-      <Filter>Headers</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\src\graphics\nx_icon.h">
       <Filter>Headers</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\src\graphics\pngfuncs.h">
-      <Filter>Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\src\graphics\screenshot.h">
       <Filter>Headers</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\src\graphics\sprites.h">
@@ -726,9 +705,6 @@
       <Filter>Headers</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\src\nx.h">
-      <Filter>Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\src\nx_math.h">
       <Filter>Headers</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\src\object.h">
@@ -785,15 +761,6 @@
     <ClInclude Include="..\..\..\src\slope.h">
       <Filter>Headers</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\src\sound\org.h">
-      <Filter>Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\src\sound\pxt.h">
-      <Filter>Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\src\sound\sound.h">
-      <Filter>Headers</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\src\stageboss.h">
       <Filter>Headers</Filter>
     </ClInclude>
@@ -827,9 +794,6 @@
     <ClInclude Include="..\..\..\src\version.h">
       <Filter>Headers</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\src\sound\ogg11.h">
-      <Filter>Headers</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\src\ResourceManager.h">
       <Filter>Headers</Filter>
     </ClInclude>
@@ -846,6 +810,30 @@
       <Filter>Headers</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\src\Utils\Logger.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\graphics\Renderer.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\graphics\Surface.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\graphics\types.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\pause\mods.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\sound\Ogg.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\sound\Organya.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\sound\Pixtone.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\sound\SoundManager.h">
       <Filter>Headers</Filter>
     </ClInclude>
   </ItemGroup>

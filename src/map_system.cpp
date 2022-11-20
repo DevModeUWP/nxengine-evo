@@ -129,7 +129,10 @@ bool ms_init(int return_to_mode)
   ms.py = ms.y + ((player->y / CSFI) / TILE_H);
 
   ms.bannertext = stages[game.curmap].stagename;
+
+#pragma warning(disable : 4146)
   ms.textx      = (Renderer::getInstance()->screenWidth / 2) + (rtl() ? (Renderer::getInstance()->font.getWidth(ms.bannertext) / 2) : -(Renderer::getInstance()->font.getWidth(ms.bannertext) / 2));
+#pragma warning(enable : 4146)
   ms.texty      = BANNER_TOP + 3;
 
   return 0;

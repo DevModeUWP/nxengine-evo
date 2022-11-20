@@ -130,7 +130,7 @@ inline void prevent_child_fd(FILE *f)
 {
 
 #ifdef _WIN32
-#if !defined(__cplusplus_winrt)
+#if !defined(__cplusplus_winrt) && !(defined(WINAPI_FAMILY) && (WINAPI_FAMILY == WINAPI_FAMILY_APP))
     auto file_handle = (HANDLE)_get_osfhandle(_fileno(f));
     if (!::SetHandleInformation(file_handle, HANDLE_FLAG_INHERIT, 0))
         throw spdlog_ex("SetHandleInformation failed", errno);
