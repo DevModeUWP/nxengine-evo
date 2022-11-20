@@ -129,10 +129,13 @@ bool ms_init(int return_to_mode)
   ms.py = ms.y + ((player->y / CSFI) / TILE_H);
 
   ms.bannertext = stages[game.curmap].stagename;
-
+#if defined(WINAPI_FAMILY) && (WINAPI_FAMILY == WINAPI_FAMILY_APP)
 #pragma warning(disable : 4146)
+#endif
   ms.textx      = (Renderer::getInstance()->screenWidth / 2) + (rtl() ? (Renderer::getInstance()->font.getWidth(ms.bannertext) / 2) : -(Renderer::getInstance()->font.getWidth(ms.bannertext) / 2));
+#if defined(WINAPI_FAMILY) && (WINAPI_FAMILY == WINAPI_FAMILY_APP)
 #pragma warning(enable : 4146)
+ #endif
   ms.texty      = BANNER_TOP + 3;
 
   return 0;

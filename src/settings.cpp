@@ -79,6 +79,8 @@ bool settings_load(Settings *setfile)
     memset(setfile, 0, sizeof(Settings));
 #if defined(__VITA__) || defined(__SWITCH__)
     setfile->resolution     = 1;
+#elif defined(WINAPI_FAMILY) && (WINAPI_FAMILY == WINAPI_FAMILY_APP)
+    setfile->resolution = 13; // 1920x1080, should be safe value
 #else
     setfile->resolution     = 2; // 640x480 Windowed, should be safe value
 #endif
