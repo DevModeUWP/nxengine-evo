@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Source>C:\Users\Tunip3\Downloads\icon.jpg</Source>
+    <SmallTileSource>C:\Users\Tunip3\Downloads\icon.jpg</SmallTileSource>
+    <MediumTileSource>C:\Users\Tunip3\Downloads\icon.jpg</MediumTileSource>
+    <WideTileSource>C:\Users\Tunip3\Downloads\icon.jpg</WideTileSource>
+    <LargeTileSource>C:\Users\Tunip3\Downloads\icon.jpg</LargeTileSource>
+    <AppIconSource>C:\Users\Tunip3\Downloads\icon.jpg</AppIconSource>
+    <SplashScreenSource>C:\Users\Tunip3\Downloads\bg.png</SplashScreenSource>
+    <PackageLogoSource>C:\Users\Tunip3\Downloads\icon.jpg</PackageLogoSource>
+  </PropertyGroup>
+</Project>
