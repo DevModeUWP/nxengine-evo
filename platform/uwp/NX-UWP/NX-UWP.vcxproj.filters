@@ -1008,5 +1008,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="..\ext\SDL2\src\main\winrt\SDL2-WinRTResource_BlankCursor.cur" />
+    <None Include="NX-UWP_TemporaryKey.pfx" />
   </ItemGroup>
 </Project>

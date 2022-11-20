@@ -9,5 +9,9 @@
     <AppIconSource>C:\Users\Tunip3\Downloads\icon.jpg</AppIconSource>
     <SplashScreenSource>C:\Users\Tunip3\Downloads\bg.png</SplashScreenSource>
     <PackageLogoSource>C:\Users\Tunip3\Downloads\icon.jpg</PackageLogoSource>
+    <UapAppxPackageBuildMode>SideloadOnly</UapAppxPackageBuildMode>
+    <AppxShowAllApps>False</AppxShowAllApps>
+    <AppxBuildConfigurationSelection>x64</AppxBuildConfigurationSelection>
+    <PackageOptionalProjectsInIdeBuilds>True</PackageOptionalProjectsInIdeBuilds>
   </PropertyGroup>
 </Project>
