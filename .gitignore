@@ -7,3 +7,8 @@
 *.AppImage
 *.flatpak
 *.snap
+/.vs
+/platform/win32/extract/x64/Debug
+/platform/win32/nx/x64/Debug
+/platform/uwp/NX-UWP/.vs/NX-UWP
+/platform/uwp/NX-UWP/x64/Debug
