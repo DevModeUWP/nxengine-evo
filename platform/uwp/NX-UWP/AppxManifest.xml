@@ -7,10 +7,10 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="CaveStory" Publisher="CN=DM" Version="1.0.0.0" ProcessorArchitecture="x64" />
+  <Identity Name="CaveStory-powered-by-nxengineevo" Publisher="CN=DM" Version="1.0.0.0" ProcessorArchitecture="x64" />
   <mp:PhoneIdentity PhoneProductId="6cad38ea-55be-4413-a58d-9dd455c9c7b8" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
-    <DisplayName>Cave Story</DisplayName>
+    <DisplayName>Cave Story (powered by NXEngine-EVO)</DisplayName>
     <PublisherDisplayName>Tunip3</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
